@@ -1,5 +1,5 @@
 # DUEL COMMANDER BANLIST
-A new service to help developpers to keep an up-to-date data.
+A new service to help developpers to keep an up-to-date MTGDC data.
 
 ## THE SOLUTION TO KEEP THE PROJECT UPDATED
 * Each banlist is stored as `txt` file of already established human-readable format (in `./banlists` folder)
