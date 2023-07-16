@@ -1,0 +1,8 @@
+JANUARY 2016 RULES - BANNED/RESTRICTED UPDATE
+Duel Commander gets played more and more in the world, and regional coordinators have joined the committee to help us take the worldwide community into account. We want to thank the coordinators for their help and we also want to thank all of you who participate in the expansion of Duel Commander.
+##
+Individual:Cataclysm is unbanned.
+Rules:The Duel Commander rules indicate that adding mana of any color to your mana pool that is not part of your Commander’s color identity gives colorless mana instead. Colorless mana obtained this way can be used to cast spells and use abilities that require "true colorless" mana (the new “◇” symbol replacing the ① for costs). Cards which generate mana of any color (for example: City of Brass, Coalition Relic, Birds of paradise, ...) allow their controllers to use cards that require "true colorless" mana if your commander doesn't have a 5-color identity, for example.
+Other:No changes.
+##
+Cataclysm:Cataclysm is a card with a very high power level and that requires a specific setup to really shine. That was relatively easy to set up when Mystical Tutor was legal, since it allowed players to either find a necessary piece of disruption or a perfectly-timed Cataclysm. Now that Mystical Tutor is banned, the card should be less regularly backbreaking than it used to be. Besides, the decks that will benefit the most from that unban aren't the best positionned in the format (Abzan Disrupt / Geist of Saint Traft / Grand Arbiter Augustin IV).
