@@ -77,9 +77,107 @@ class BanlistCompiler:
         :rtype: Dict"""
         return self._current
 
+    def _add_tooltip(self, text, tooltip):
+        """
+        Fonction qui permet de rajouter le tooltip au nom de la carte
+
+        :param text str: Phrase à laquelle ajouter un tooltip
+        :param tooltip str: Contenu du tooltip
+
+        :returns: Text avec tooltip prêt à intégrer dans le fichier HTML
+        :rtype: str
+
+        :meta private:
+        """
+        return (
+            f'<a href="#" data-bs-toggle="tooltip" data-bs-title="{tooltip}">{text}</a>'
+        )
+
+    def _changes(self, json_data, zone):
+        """
+        Fonction qui retourne les mouvements concernés dans la banliste (``json_data``)
+        selon la ``zone`` indiquée.
+
+        :param json_data dict: Données chargées depuis un fichier dans
+            ``<racine>/banlists/<fichier>.json``
+        :param zone str: (``md`` ou ``cz``) correspond à la zone souhaitée
+
+        :returns: La liste des mouvements (bans et unbans) pour la zone
+        :rtype: dict
+
+        :meta private:
+        """
+        choice = "as_commander" if zone == "cz" else "in_deck" if zone == "md" else ""
+        precision = " as a commander" if choice == "as_commander" else ""
+
+        bans = [
+            (
+                "<li>"
+                + self._add_tooltip(card, json_data["explanations"][card])
+                + f" is now <strong>banned</strong>{precision}."
+                + "</li>"
+            )
+            for card in json_data[f"newly_banned_{choice}"]
+        ]
+        unbans = [
+            (
+                "<li>"
+                + self._add_tooltip(card, json_data["explanations"][card])
+                + f" is now <strong>unbanned</strong>{precision}."
+                + "</li>"
+            )
+            for card in json_data[f"newly_unbanned_{choice}"]
+        ]
+
+        return bans + unbans
+
+    def _create_html_card(self, json_data):
+        """
+        Fonction qui permet de créer la carte ``timeline`` concernant la
+        banlist fournie.
+
+        :param json_data dict: Données chargées depuis un fichier dans
+            ``<racine>/banlists/<fichier>.json``
+
+        :returns: La carte prête à intégrer dans le code HTML de la page
+        :rtype: str
+
+        :meta private:
+        """
+
+        card = '<div class="timeline">'
+        card += '<span class="timeline-icon"></span>'
+        card += f'<span class="year">{json_data["date"]}</span>'
+        card += '<div class="timeline-content">'
+        card += f'<p class="description">{json_data["summary"]}</p>'
+
+        end_card = "</div></div>"
+
+        cz_changes=self._changes(json_data, zone="cz")
+        md_changes=self._changes(json_data, zone="md")
+
+        if all([len(cz_changes) == 0, len(md_changes) ==0]):
+            card += '<h3 class="title">No Changes</h3>'
+            return card + end_card
+
+        if len(cz_changes) > 0:
+            card += '<h3 class="title">Changes in Command Zone</h3>'
+            for change in cz_changes:
+                card += change
+
+        if len(md_changes) > 0:
+            card += '<h3 class="title">Changes in Deck</h3>'
+            for change in md_changes:
+                card += change
+
+        return card + end_card
+
     def compile_to_html(self):
         """Fonction qui retourne l'historique au format HTML."""
-        return []
+        return [
+            self._create_html_card(self._json[date])
+            for date in self._dates
+        ]
 
     def is_banned(self, card, command_zone=False):
         """
