@@ -58,13 +58,12 @@ def main(args):
     html_file = None
 
     if any([args.compile_json, args.compile_both]):
-        json_file = banlist.get_json_banlist()
+        json_file = banlist.get_json_banlist(args.output)
 
     if any([args.compile_html, args.compile_both]):
-        html_file = banlist.compile_to_html()
+        banlist.compile_to_html(args.output)
 
-    return (json_file, html_file)
-
+    return
 
 if __name__ == "__main__":
     print(main(sys.argv[1:]))

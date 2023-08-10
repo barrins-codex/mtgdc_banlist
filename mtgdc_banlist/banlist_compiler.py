@@ -5,6 +5,7 @@ import glob
 import json
 from datetime import datetime
 
+
 class BanlistCompiler:
     """
     Cette classe permet de travailler les fichiers JSON disponibles dans
@@ -68,14 +69,22 @@ class BanlistCompiler:
         }
         return self._current
 
-    def get_json_banlist(self):
+    def get_json_banlist(self, output_file):
         """
-        Fonction qui retourne la banliste au format JSON.
+        Procédure qui retourne la banliste au format JSON.
 
-        :returns: La liste des cartes bannies dans les entrées
-            ``banned_commandes`` et ``banned_cards``
-        :rtype: Dict"""
-        return self._current
+        :param output_file path: Chemin absolu pointant vers la sortie
+        """
+
+        output_file = "banlists.json" if output_file == "" else output_file
+        with open(output_file, "+w", encoding="utf-8") as banlist_file:
+            json.dump(
+                self._current,
+                banlist_file,
+                ensure_ascii=False,
+                indent=4,
+                sort_keys=True,
+            )
 
     def _add_tooltip(self, text, tooltip_dict):
         """
@@ -151,7 +160,11 @@ class BanlistCompiler:
         month_name = date_obj.strftime("%B")
         year = date_obj.strftime("%Y")
         day = date_obj.strftime("%d")
-        day_suffix = "th" if 11 <= int(day) <= 13 else {1: "st", 2: "nd", 3: "rd"}.get(int(day) % 10, "th")
+        day_suffix = (
+            "th"
+            if 11 <= int(day) <= 13
+            else {1: "st", 2: "nd", 3: "rd"}.get(int(day) % 10, "th")
+        )
 
         return f"{month_name} {year}, {day}{day_suffix}"
 
@@ -208,9 +221,37 @@ class BanlistCompiler:
 
         return card + end_card
 
-    def compile_to_html(self):
-        """Fonction qui retourne l'historique au format HTML."""
-        return [self._create_html_card(self._json[date]) for date in self._dates]
+    def compile_to_html(self, output_file):
+        """
+        Procédure qui retourne l'historique des banlists au format HTML.
+
+        :param output_file path: Chemin absolu pointant vers la sortie
+        """
+        banlists_str_list = [
+            self._create_html_card(self._json[date]) for date in self._dates
+        ]
+
+        with open(
+            "mtgdc_banlist/static/banlist_html_header.html", "r", encoding="utf-8"
+        ) as banlist_header_file:
+            html_header = banlist_header_file.read()
+
+        with open(
+            "mtgdc_banlist/static/banlist_html_footer.html", "r", encoding="utf-8"
+        ) as banlist_footer_file:
+            html_footer = banlist_footer_file.read()
+
+        output_file = "histo_banlists.html" if output_file == "" else output_file
+        with open(output_file, "+w", encoding="utf-8") as banlist_file:
+            banlist_file.truncate(0)
+            banlist_file.seek(0)
+
+            banlist_file.write(html_header)
+
+            for line in banlists_str_list:
+                banlist_file.write(line + "\n")
+
+            banlist_file.write(html_footer)
 
     def is_banned(self, card, command_zone=False):
         """

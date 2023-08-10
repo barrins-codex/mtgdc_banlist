@@ -4,6 +4,7 @@ project.parser
 Fichier permettant d'utiliser le parser et d'executer la compilation demandée.
 """
 import argparse
+import os
 
 parser = argparse.ArgumentParser(
     prog="create_banlist.py",
@@ -22,11 +23,21 @@ parser.add_argument(
     action="store_true",
     help="Génère la version actuelle de la banlist au format JSON",
 )
+
 parser.add_argument(
     "--compile-html",
     action="store_true",
     help="Génère l'historique de la banlist au format HTML",
 )
+
 parser.add_argument(
     "--compile-both", action="store_true", help="Génère les fichiers JSON et HTML"
+)
+
+parser.add_argument(
+    "-o",
+    "--output",
+    help="Permet d'indiquer le fichier de sortie",
+    nargs="?",
+    default="",
 )
