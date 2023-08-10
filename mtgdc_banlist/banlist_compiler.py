@@ -77,7 +77,7 @@ class BanlistCompiler:
         :rtype: Dict"""
         return self._current
 
-    def _add_tooltip(self, text, tooltip):
+    def _add_tooltip(self, text, tooltip_dict):
         """
         Fonction qui permet de rajouter le tooltip au nom de la carte
 
@@ -89,6 +89,11 @@ class BanlistCompiler:
 
         :meta private:
         """
+        tooltip = ""
+
+        if text in tooltip_dict.keys():
+            tooltip = tooltip_dict[text]
+
         return (
             f'<a href="#" data-bs-toggle="tooltip" data-bs-title="{tooltip}">{text}</a>'
         )
@@ -112,7 +117,7 @@ class BanlistCompiler:
 
         bans = [
             (
-                self._add_tooltip(card, json_data["explanations"][card])
+                self._add_tooltip(card, json_data["explanations"])
                 + f" is now <strong>banned</strong>{precision}."
                 + "<br>"
             )
@@ -120,7 +125,7 @@ class BanlistCompiler:
         ]
         unbans = [
             (
-                self._add_tooltip(card, json_data["explanations"][card])
+                self._add_tooltip(card, json_data["explanations"])
                 + f" is now <strong>legal</strong>."
                 + "<br>"
             )
