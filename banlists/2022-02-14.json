@@ -1,0 +1,13 @@
+[
+    {
+        "date": "2022-02-14",
+        "special": "As of now, it is possible to only play one of the Commanders in the command zone.",
+        "newly_banned_as_commander": ["Yoshimaru, Ever Faithful"],
+        "newly_unbanned_as_commander": ["Bruse Tarl, Boorish Herder", "Jeska, Thrice Reborn", "Keleth, Sunmane Familiar", "Kraum, Ludevic's Opus", "Livio, Oathsworn Sentinel", "Ludevic, Necro-Alchemist", "Reyhan, Last of the Abzan", "Rograkh, Son of Rohgahh", "Tymna, the Weaver"],
+        "newly_banned_in_deck": [],
+        "newly_unbanned_in_deck": [],
+        "explanations": {
+            "Yoshimaru, Ever Faithful": "Even though Yoshimaru, Ever Faithful won't be as strong as it could have been without the rule change, it is still one of the best one-drop commanders ever printed. With more and more cheap legendary permanents printed every year, and a decent number of those being already available, it will regularly outperform other low-cost aggressive commanders, even with an average draw. Therefore, we've decided to ban Yoshimaru, Ever Faithful in order to maintain diversity among aggressive strategies."
+        }
+    }
+]
