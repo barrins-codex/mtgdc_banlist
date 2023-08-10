@@ -35,6 +35,12 @@
 <!-- JS Styling-->
 <script src="https://barrins-codex.org/static/js/barrins-codex.js"></script>
 
+<!-- Enabling Tooltips -->
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+
 <script>
     /* Displaying card images */
     /* https://github.com/atomiks/tippyjs/issues/562 */
