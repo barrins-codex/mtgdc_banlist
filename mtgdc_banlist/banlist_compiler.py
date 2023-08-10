@@ -3,7 +3,7 @@ project.banlist_compiler
 """
 import glob
 import json
-
+from datetime import datetime
 
 class BanlistCompiler:
     """
@@ -134,6 +134,27 @@ class BanlistCompiler:
 
         return bans + unbans
 
+    def _date_to_str(self, date_str):
+        """
+        Fonction qui permet de modifier l'affichage de la chaine
+        ``2020-05-25`` en ``May 2020, 25th``.
+
+        :param date_str datetime.datetime: Date au format ``%Y-%m-%d``
+
+        :returns: Date au format litéral
+        :rtype: str
+
+        :meta private:
+        """
+        date_obj = datetime.strptime(date_str, "%Y-%m-%d")
+
+        month_name = date_obj.strftime("%B")
+        year = date_obj.strftime("%Y")
+        day = date_obj.strftime("%d")
+        day_suffix = "th" if 11 <= int(day) <= 13 else {1: "st", 2: "nd", 3: "rd"}.get(int(day) % 10, "th")
+
+        return f"{month_name} {year}, {day}{day_suffix}"
+
     def _create_html_card(self, json_data):
         """
         Fonction qui permet de créer la carte ``timeline`` concernant la
@@ -150,7 +171,7 @@ class BanlistCompiler:
 
         card = '<div class="timeline">'
         card += '<span class="timeline-icon"></span>'
-        card += f'<span class="year">{json_data["date"]}</span>'
+        card += f'<span class="year">{self._date_to_str(json_data["date"])}</span>'
         card += '<div class="timeline-content">'
 
         changes = '<h3 class="title">Changes:</h3>'
