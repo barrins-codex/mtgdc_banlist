@@ -44,7 +44,7 @@ class BanlistCompiler:
                 self._dates.append(date_annonce)
                 self._json[date_annonce] = json.load(json_file)[0]
 
-        self._dates = sorted(self._dates)
+        self._dates = sorted(self._dates, reverse=True)
 
         self._walk()
 
@@ -112,19 +112,17 @@ class BanlistCompiler:
 
         bans = [
             (
-                "<li>"
-                + self._add_tooltip(card, json_data["explanations"][card])
+                self._add_tooltip(card, json_data["explanations"][card])
                 + f" is now <strong>banned</strong>{precision}."
-                + "</li>"
+                + "<br>"
             )
             for card in json_data[f"newly_banned_{choice}"]
         ]
         unbans = [
             (
-                "<li>"
-                + self._add_tooltip(card, json_data["explanations"][card])
-                + f" is now <strong>unbanned</strong>{precision}."
-                + "</li>"
+                self._add_tooltip(card, json_data["explanations"][card])
+                + f" is now <strong>legal</strong>."
+                + "<br>"
             )
             for card in json_data[f"newly_unbanned_{choice}"]
         ]
@@ -166,6 +164,7 @@ class BanlistCompiler:
             card += '<p class="description">'
             for change in cz_changes:
                 card += change
+            card = card[:-4] + "</p>"  # Retrait du dernier "<br>"
             changes = ""
 
         if len(md_changes) > 0:
@@ -173,6 +172,7 @@ class BanlistCompiler:
             card += '<p class="description">'
             for change in md_changes:
                 card += change
+            card = card[:-4] + "</p>"  # Retrait du dernier "<br>"
             changes = ""
 
         if len(json_data["special"]) > 0:
@@ -184,10 +184,7 @@ class BanlistCompiler:
 
     def compile_to_html(self):
         """Fonction qui retourne l'historique au format HTML."""
-        return [
-            self._create_html_card(self._json[date])
-            for date in self._dates
-        ]
+        return [self._create_html_card(self._json[date]) for date in self._dates]
 
     def is_banned(self, card, command_zone=False):
         """
