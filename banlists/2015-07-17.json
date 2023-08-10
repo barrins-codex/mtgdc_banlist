@@ -1,7 +1,7 @@
 [
     {
         "date": "2015-07-17",
-        "summary": "Over the last three months, Duel Commander events have been more numerous and more populated. The player activity on all media was also very intensive. Such dynamics are very positive for the format and we hope that it will keep on going.",
+        "special": "The commander can now be put in the command zone instead of going to the hand.",
         "newly_banned_as_commander": [],
         "newly_unbanned_as_commander": [],
         "newly_banned_in_deck": ["Mystical Tutor"],

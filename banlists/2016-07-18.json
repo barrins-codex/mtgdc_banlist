@@ -1,7 +1,7 @@
 [
     {
         "date": "2016-07-18",
-        "summary": "Since our last announcement, we were able to observe a slight expansion in the current metagame, driven by a growing representation of active archetypes (like Abzan/mono white/mono red/Rakdos/Gruul/Selesnya/etc.).<br>We are still far away from reaching a proper balance in the archetypes statistics. Yet, this is a first step towards the expected diversity we want for our favourite game format.<br>We still noticed that the proportions of control and combo decks are still way too high. The various communities (Italy, France, USA, Russia, etc.) gave us a lot of worried feedback about the dominance of blue-based decks in the current format as those lines are being written.<br>The present announcement therefore aims at continuing the movement we startled during the April 2016 update, with the banishment of commanders and non-commander cards that favoured the oppressing “Control/Combo/Elves” triptych.",
+        "special": "",
         "newly_banned_as_commander": ["Marath, Will of the Wild"],
         "newly_unbanned_as_commander": [],
         "newly_banned_in_deck": ["Necrotic Ooze","Dig Through Time","Treasure Cruise"],

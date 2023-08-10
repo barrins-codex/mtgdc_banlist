@@ -149,26 +149,36 @@ class BanlistCompiler:
         card += '<span class="timeline-icon"></span>'
         card += f'<span class="year">{json_data["date"]}</span>'
         card += '<div class="timeline-content">'
-        card += f'<p class="description">{json_data["summary"]}</p>'
 
+        changes = '<h3 class="title">Changes:</h3>'
         end_card = "</div></div>"
 
-        cz_changes=self._changes(json_data, zone="cz")
-        md_changes=self._changes(json_data, zone="md")
+        cz_changes = self._changes(json_data, zone="cz")
+        md_changes = self._changes(json_data, zone="md")
 
-        if all([len(cz_changes) == 0, len(md_changes) ==0]):
-            card += '<h3 class="title">No Changes</h3>'
-            return card + end_card
+        if all(
+            [len(cz_changes) == 0, len(md_changes) == 0, len(json_data["special"]) == 0]
+        ):
+            return card + '<h3 class="title">No Changes</h3>' + end_card
 
         if len(cz_changes) > 0:
-            card += '<h3 class="title">Changes in Command Zone</h3>'
+            card += changes
+            card += '<p class="description">'
             for change in cz_changes:
                 card += change
+            changes = ""
 
         if len(md_changes) > 0:
-            card += '<h3 class="title">Changes in Deck</h3>'
+            card += changes
+            card += '<p class="description">'
             for change in md_changes:
                 card += change
+            changes = ""
+
+        if len(json_data["special"]) > 0:
+            padding = " other-changes" if changes == "" else ""
+            card += f'<h3 class="title{padding}">Other Changes:</h3>'
+            card += f'<p class="description">{json_data["special"]}</p>'
 
         return card + end_card
 
