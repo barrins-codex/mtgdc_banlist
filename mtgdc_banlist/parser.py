@@ -4,7 +4,6 @@ project.parser
 Fichier permettant d'utiliser le parser et d'executer la compilation demandée.
 """
 import argparse
-import os
 
 parser = argparse.ArgumentParser(
     prog="create_banlist.py",

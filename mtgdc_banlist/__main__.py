@@ -24,7 +24,6 @@ l'appel au module : ::
 
         python mtgdc_banlist --compile-json --compile-html
 """
-import json
 import sys
 
 from mtgdc_banlist.banlist_compiler import BanlistCompiler
@@ -56,7 +55,6 @@ def main(args):
     if any([args.compile_html, args.compile_both]):
         banlist.compile_to_html(args.output)
 
-    return
 
 if __name__ == "__main__":
     print(main(sys.argv[1:]))

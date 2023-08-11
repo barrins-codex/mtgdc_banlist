@@ -75,8 +75,8 @@ class BanlistCompiler:
 
         :param output_file path: Chemin absolu pointant vers la sortie
         """
-
         output_file = "banlists.json" if output_file == "" else output_file
+
         with open(output_file, "+w", encoding="utf-8") as banlist_file:
             json.dump(
                 self._current,
@@ -135,7 +135,7 @@ class BanlistCompiler:
         unbans = [
             (
                 self._add_tooltip(card, json_data["explanations"])
-                + f" is now <strong>legal</strong>."
+                + " is now <strong>legal</strong>."
                 + "<br>"
             )
             for card in json_data[f"newly_unbanned_{choice}"]
@@ -270,8 +270,8 @@ class BanlistCompiler:
         """
         if command_zone:
             return card in self.cz_bans
-        else:
-            return card in self.md_bans
+
+        return card in self.md_bans
 
     @property
     def md_bans(self):
