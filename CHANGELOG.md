@@ -1,7 +1,7 @@
 Changelog
 =========
 
-## 1.2 (unreleased)
+## 1.2 (2023-08-12)
 -------------------
 
 - Fix files calling
