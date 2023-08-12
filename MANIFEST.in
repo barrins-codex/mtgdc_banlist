@@ -8,6 +8,10 @@ include *.html
 include *.json
 include *.md
 include *.txt
+include *.bat
+include Makefile
+
+recursive-include banlists *.json
 
 global-exclude */__pycache__/*
 global-exclude *.egg-info/*
