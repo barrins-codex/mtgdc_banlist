@@ -24,7 +24,8 @@ File name must be `%Y-%m-%d.json` format with the following template:
 ### HOW TO ADD NEW BANLIST
 1. Put banlist file `%Y-%m-%d.json` file into `./banlists`
 1. Re-run python `python mtgdc_banlist` with options `--compile-html`, `--compile-json` or `--compile-both`
-*Similar works to edit/delete the banlist.*
+
+*Works similar to edit/delete a banlist.*
 
 ## REQUIREMENTS
 * Python (v3.10+)
