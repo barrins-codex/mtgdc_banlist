@@ -2,8 +2,8 @@
     {
         "date": "2021-01-21",
         "special": "",
-        "newly_banned_as_commander": [],
-        "newly_unbanned_as_commander": ["Esior, Wardwing Familiar", "Jeska, Thrice Reborn"],
+        "newly_banned_as_commander": ["Esior, Wardwing Familiar", "Jeska, Thrice Reborn"],
+        "newly_unbanned_as_commander": [],
         "newly_banned_in_deck": [],
         "newly_unbanned_in_deck": ["Fireblast"],
         "explanations": {
