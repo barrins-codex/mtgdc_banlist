@@ -1,0 +1,11 @@
+[
+    {
+        "date": "Bans antérieurs",
+        "special": "",
+        "newly_banned_as_commander": ["Derevi, Empyrial Tactician", "Oloro, Ageless Ascetic", "Rofellos, Llanowar Emissary"],
+        "newly_unbanned_as_commander": [],
+        "newly_banned_in_deck": ["Ancestral Recall", "Back to Basics", "Black Lotus", "Channel", "Grim Monolith", "Hermit Druid", "Humility", "Imperial Seal", "Karakas", "Library of Alexandria", "Loyal Retainers", "Mana Crypt", "Mana Drain", "Mana Vault", "Mishra's Workshop", "Mox Emerald", "Mox Jet", "Mox Pearl", "Mox Ruby", "Mox Sapphire", "Natural Order", "Oath of Druids", "Protean Hulk", "Sol Ring", "Strip Mine", "The Tabernacle at Pendrell Vale", "Time Vault", "Time Walk", "Tinker", "Tolarian Academy", "Vampiric Tutor"],
+        "newly_unbanned_in_deck": [],
+        "explanations": {}
+    }
+]

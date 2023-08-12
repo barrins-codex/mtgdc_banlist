@@ -185,7 +185,12 @@ class BanlistCompiler:
 
         card = '<div class="timeline">'
         card += '<span class="timeline-icon"></span>'
-        card += f'<span class="year">{self._date_to_str(json_data["date"])}</span>'
+
+        if json_data["date"] == "Bans antérieurs":
+            card += f'<span class="year">{json_data["date"]}</span>'
+        else:
+            card += f'<span class="year">{self._date_to_str(json_data["date"])}</span>'
+
         card += '<div class="timeline-content">'
 
         changes = '<h3 class="title">Changes:</h3>'
