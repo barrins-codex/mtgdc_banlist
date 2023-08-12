@@ -1,7 +1,7 @@
 Changelog
 =========
 
-## 1.1 (unreleased)
+## 1.1 (2023-08-12)
 -------------------
 
 - Fix banlist placement for them to be available when importing the module
