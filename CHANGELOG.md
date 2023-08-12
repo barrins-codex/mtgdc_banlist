@@ -4,7 +4,7 @@ Changelog
 ## 1.2 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix files calling
 
 
 ## 1.1 (2023-08-12)

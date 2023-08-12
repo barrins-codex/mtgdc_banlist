@@ -3,7 +3,10 @@ project.banlist_compiler
 """
 import glob
 import json
+import os
 from datetime import datetime
+
+import pkg_resources
 
 
 class BanlistCompiler:
@@ -39,7 +42,9 @@ class BanlistCompiler:
         self._dates = []
         self._current = None
 
-        for file in glob.glob("mtgdc_banlist/banlists" + "/*.json"):
+        banlists_path = pkg_resources.resource_filename("mtgdc_banlist", "banlists")
+        json_files = glob.glob(os.path.join(banlists_path, "*.json"))
+        for file in json_files:
             with open(file, "r", encoding="utf-8") as json_file:
                 date_annonce = file.split("/", maxsplit=1)[1][:-5]
                 self._dates.append(date_annonce)
