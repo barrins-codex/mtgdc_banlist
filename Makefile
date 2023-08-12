@@ -1,4 +1,4 @@
-.PHONY: update clean quality
+.PHONY: update clean quality release
 
 update:
 	pip install --upgrade pip
@@ -11,6 +11,10 @@ clean:
 quality:
 	black --check .
 	flake8
+
+release:
+	fullrelease
+	pip install -e ".[dev]"
 
 # Minimal makefile for Sphinx documentation
 #
