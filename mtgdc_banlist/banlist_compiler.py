@@ -39,7 +39,7 @@ class BanlistCompiler:
         self._dates = []
         self._current = None
 
-        for file in glob.glob("banlists" + "/*.json"):
+        for file in glob.glob("mtgdc_banlist/banlists" + "/*.json"):
             with open(file, "r", encoding="utf-8") as json_file:
                 date_annonce = file.split("/", maxsplit=1)[1][:-5]
                 self._dates.append(date_annonce)
