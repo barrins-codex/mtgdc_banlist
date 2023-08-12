@@ -1,3 +1,17 @@
+.PHONY: update clean quality
+
+update:
+	pip install --upgrade pip
+	pip install --upgrade --upgrade-strategy eager -e ".[dev]"
+
+clean:
+	rm -rf dist
+	rm -rf .pytest_cache
+
+quality:
+	black --check .
+	flake8
+
 # Minimal makefile for Sphinx documentation
 #
 
