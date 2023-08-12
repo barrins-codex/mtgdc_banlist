@@ -1,7 +1,7 @@
 [
     {
         "date": "2022-02-14",
-        "special": "As of now, it is possible to only play one of the Commanders in the command zone.",
+        "special": "As of now, each player can only play one of the Commanders in their command zone.",
         "newly_banned_as_commander": ["Yoshimaru, Ever Faithful"],
         "newly_unbanned_as_commander": ["Bruse Tarl, Boorish Herder", "Jeska, Thrice Reborn", "Keleth, Sunmane Familiar", "Kraum, Ludevic's Opus", "Livio, Oathsworn Sentinel", "Ludevic, Necro-Alchemist", "Reyhan, Last of the Abzan", "Rograkh, Son of Rohgahh", "Tymna, the Weaver"],
         "newly_banned_in_deck": [],
