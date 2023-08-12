@@ -1,0 +1,14 @@
+include LICENSE README.md CHANGELOG.rst
+
+graft mtgdc_banlist
+graft banlist
+prune documentation
+
+include *.html
+include *.json
+include *.md
+include *.txt
+
+global-exclude */__pycache__/*
+global-exclude *.egg-info/*
+global-exclude documentation/*
