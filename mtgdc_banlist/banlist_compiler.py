@@ -51,22 +51,23 @@ class BanlistCompiler:
 
     def _walk(self):
         """
-        Fonction qui vérifie date par date les mouvements de la banlist.
+        Procédure qui vérifie date par date les mouvements de la banlist.
 
         :meta private:
         """
         cz_bans = set()
         md_bans = set()
-        for date in self._dates:
+        for date in sorted(self._dates):
             cz_bans = cz_bans | set(self._json[date]["newly_banned_as_commander"])
             cz_bans = cz_bans - set(self._json[date]["newly_unbanned_as_commander"])
             md_bans = md_bans | set(self._json[date]["newly_banned_in_deck"])
             md_bans = md_bans - set(self._json[date]["newly_unbanned_in_deck"])
 
         self._current = {
-            "banned_commanders": list(cz_bans),
-            "banned_cards": list(md_bans),
+            "banned_commanders": sorted(list(cz_bans)),
+            "banned_cards": sorted(list(md_bans)),
         }
+
         return self._current
 
     def get_json_banlist(self, output_file):
