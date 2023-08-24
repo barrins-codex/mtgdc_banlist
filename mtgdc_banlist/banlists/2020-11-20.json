@@ -2,7 +2,7 @@
     {
         "date": "2020-11-20",
         "special": "New fixed schedule for announcements: the last monday of every odd month",
-        "newly_banned_as_commander": ["Akiri, Line-Slinger", "Omnath, Locus of Creation", "Thrasios, Triton Hero", "Tymna, the Weaver "],
+        "newly_banned_as_commander": ["Akiri, Line-Slinger", "Omnath, Locus of Creation", "Thrasios, Triton Hero", "Tymna, the Weaver"],
         "newly_unbanned_as_commander": [],
         "newly_banned_in_deck": ["Jeweled Lotus", "Uro, Titan of Nature's Wrath"],
         "newly_unbanned_in_deck": [],
