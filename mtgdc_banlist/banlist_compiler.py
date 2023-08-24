@@ -110,7 +110,7 @@ class BanlistCompiler:
             tooltip = tooltip_dict[text]
 
         return (
-            f'<a href="#" data-bs-toggle="tooltip" data-bs-title="{tooltip}">{text}</a>'
+            f'<span class="card-banlist" data-bs-toggle="tooltip" data-bs-title="{tooltip}">{text}</span>'
         )
 
     def _changes(self, json_data, zone):
@@ -191,7 +191,7 @@ class BanlistCompiler:
         card = '<div class="timeline">'
         card += '<span class="timeline-icon"></span>'
 
-        if json_data["date"] == "Bans antérieurs":
+        if json_data["date"] == "Previous bans":
             card += f'<span class="year">{json_data["date"]}</span>'
         else:
             card += f'<span class="year">{self._date_to_str(json_data["date"])}</span>'

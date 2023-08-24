@@ -47,41 +47,12 @@
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 </script>
 
-<script>
-    /* Displaying card images */
-    /* https://github.com/atomiks/tippyjs/issues/562 */
-    tippy('span.card-name', {
-        touchHold: true,
-        hideOnClick: false,
-        interactive: true,
-        placement: 'left',
-        distance: 20,
-        arrow: true,
-        animateFill: false,
-        animation: 'shift-away',
-        // In ES5 as you don't have a transpilation step(?):
-        onShow: function(instance) {
-            var img = instance.popper.querySelector('img');
-            img.src = img.dataset.src;
-        }
-    });
-
-    /* Displaying rulings and tips in articles */
-    tippy('span[data-tippy-content]');
-
-    /* Getting around dropdown triggering on click */
-    /* https://markdotto.com/2012/02/27/bootstrap-explained-dropdowns/ */
-    /* https://stackoverflow.com/a/19561886 */
-    $('.dropdown').hover(function() {
-        $(this).addClass('show');
-        $(this).find('.dropdown-menu').addClass('show');
-    }, function() {
-        $(this).removeClass('show');
-        $(this).find('.dropdown-menu').removeClass('show');
-    });
-</script>
-
 <style>
+span.card-banlist {
+    text-decoration: underline;
+    font-style: italic;
+}
+
 .main-timeline {
     position: relative
 }
