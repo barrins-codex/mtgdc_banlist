@@ -136,7 +136,7 @@ class BanlistCompiler:
                 + f" is now <strong>banned</strong>{precision}."
                 + "<br>"
             )
-            for card in json_data[f"newly_banned_{choice}"]
+            for card in sorted(json_data[f"newly_banned_{choice}"])
         ]
         unbans = [
             (
@@ -144,7 +144,7 @@ class BanlistCompiler:
                 + " is now <strong>legal</strong>."
                 + "<br>"
             )
-            for card in json_data[f"newly_unbanned_{choice}"]
+            for card in sorted(json_data[f"newly_unbanned_{choice}"])
         ]
 
         return bans + unbans
