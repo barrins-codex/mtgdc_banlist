@@ -1,5 +1,4 @@
 """
-
 L'objectif principale de ce module est de compiler les banlists
 présentes dans le dossier ``<racine>/banlists/`` et d'en générer
 la version actuelle au format JSON : ::
