@@ -4,7 +4,9 @@ Changelog
 ## 1.3 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Update html view
+- Add elder bans to previous bans
+- Fix alphabetical order
 
 
 ## 1.2 (2023-08-12)
