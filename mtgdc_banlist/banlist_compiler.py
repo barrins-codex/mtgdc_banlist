@@ -4,6 +4,7 @@ project.banlist_compiler
 import glob
 import json
 import os
+import html
 from datetime import datetime
 
 import pkg_resources
@@ -108,6 +109,7 @@ class BanlistCompiler:
 
         if text in tooltip_dict.keys():
             tooltip = tooltip_dict[text]
+            tooltip = html.escape(tooltip)
 
         return (
             f'<span class="card-banlist" data-bs-toggle="tooltip" data-bs-title="{tooltip}">{text}</span>'
