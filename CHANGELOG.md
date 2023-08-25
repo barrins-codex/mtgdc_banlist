@@ -8,6 +8,7 @@ Changelog
 - Add elder bans to previous bans
 - Fix alphabetical order
 - New appearance for cards in banlists
+- Fix HTML escaping
 
 
 ## 1.2 (2023-08-12)
