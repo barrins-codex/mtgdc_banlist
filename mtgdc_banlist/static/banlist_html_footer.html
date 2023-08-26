@@ -83,10 +83,10 @@ function getInformationFromElement(elem, lookupValue = "name") {
     }
 
     if (lookupValue === "explanations") {
-        if (elem.dataset.bsTitle === "") {
+        if (elem.dataset.tooltip === "") {
             return "No announcement has been found regarding this card."
         }
-        return elem.dataset.bsTitle
+        return elem.dataset.tooltip
     }
 }
 

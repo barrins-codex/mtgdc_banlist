@@ -2,9 +2,9 @@
 project.banlist_compiler
 """
 import glob
+import html
 import json
 import os
-import html
 from datetime import datetime
 
 import pkg_resources
@@ -111,9 +111,7 @@ class BanlistCompiler:
             tooltip = tooltip_dict[text]
             tooltip = html.escape(tooltip)
 
-        return (
-            f'<span class="card-banlist" data-bs-toggle="tooltip" data-bs-title="{tooltip}">{text}</span>'
-        )
+        return f'<span class="card-banlist" data-tooltip="{tooltip}">{text}</span>'
 
     def _changes(self, json_data, zone):
         """
