@@ -2,6 +2,7 @@
     {
         "date": "2023-05-29",
         "special": "",
+        "link": "https://www.mtgdc.info/announcements/2023/may-2023-rules-bannedrestricted-update",
         "newly_banned_as_commander": ["Dihada, Binder of Wills"],
         "newly_unbanned_as_commander": [],
         "newly_banned_in_deck": ["Comet, Stellar Pup", "Hogaak, Arisen Necropolis", "Mox Amber"],

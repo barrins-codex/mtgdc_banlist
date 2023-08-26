@@ -189,7 +189,12 @@ class BanlistCompiler:
         """
 
         card = '<div class="timeline">'
-        card += '<span class="timeline-icon"></span>'
+
+        link = ""
+        if "link" in json_data.keys():
+            link = f'<a href="{json_data["link"]}" title="Go to the official '
+            link += 'announcement"><i class="fa-solid fa-link"></i></a>'
+        card += f'<span class="timeline-icon">{link}</span>'
 
         if json_data["date"] == "Previous bans":
             card += f'<span class="year">{json_data["date"]}</span>'

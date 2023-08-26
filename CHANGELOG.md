@@ -9,6 +9,7 @@ Changelog
 - Fix alphabetical order
 - New appearance for cards in banlists
 - Fix HTML escaping
+- Add link to official banlists
 
 
 ## 1.2 (2023-08-12)
