@@ -53,6 +53,7 @@ async function clickCard() {
     modal.classList.add("d-lg-flex");
     modal.classList.add("d-block");
     modal.classList.remove("none");
+    document.body.classList.toggle("modal-open");
 }
 
 function nameToImage(text) {
@@ -128,6 +129,7 @@ function banlistModal() {
         click_modal.classList.remove("d-lg-flex");
         click_modal.classList.remove("d-block");
         click_modal.classList.add("none");
+        document.body.classList.toggle("modal-open");
     })
     // Add modal img
     let click_image = document.createElement("img")
@@ -328,6 +330,9 @@ span.card-banlist {
 }
 
 @media only screen and (max-width:767px) {
+    body.modal-open {
+        overflow: hidden;
+    }
     .main-timeline {
         overflow: visible
     }
@@ -377,6 +382,7 @@ span.card-banlist {
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
+    overflow-y: auto;
 }
 
 img.banlist-modal-image {
@@ -390,7 +396,6 @@ div#banlist-click-text {
     padding: 2em;
     border-radius: 2em;
     background-color: rgba(254, 254, 226, 1);
-    overflow-y: auto;
 }
 </style>
 </html>

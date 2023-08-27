@@ -10,6 +10,7 @@ Changelog
 - New appearance for cards in banlists
 - Fix HTML escaping
 - Add link to official banlists
+- Fix overflow issues
 
 
 ## 1.2 (2023-08-12)
