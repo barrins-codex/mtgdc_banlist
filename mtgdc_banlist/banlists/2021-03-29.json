@@ -1,7 +1,8 @@
 [
     {
-        "date": "2015-01-31",
+        "date": "2021-03-29",
         "special": "",
+        "link": "https://www.mtgdc.info/announcements/2021/march-2021-rules-bannedrestricted-update",
         "newly_banned_as_commander": ["Ardenn, Intrepid Archaeologist", "Keleth, Sunmane Familiar", "Krark, the Thumbless", "Ludevic, Necro-Alchemist", "Reyhan, Last of the Abzan", "Rograkh, Son of Rohgahh"],
         "newly_unbanned_as_commander": [],
         "newly_banned_in_deck": [],
