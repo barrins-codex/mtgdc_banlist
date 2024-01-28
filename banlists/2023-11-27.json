@@ -1,0 +1,15 @@
+[
+    {
+        "date": "2023-11-27",
+        "special": "",
+        "link": "https://www.mtgdc.info/announcements/2023/november-2023-rules-bannedrestricted-update",
+        "newly_banned_as_commander": [],
+        "newly_unbanned_as_commander": [],
+        "newly_banned_in_deck": ["Lotus Petal", "Rain of Filth"],
+        "newly_unbanned_in_deck": [],
+        "explanations": {
+            "Lotus Petal":"<p>In general, some specific cards have required attention over time, among which cards that generate extra resources, cards that generate more fixed mana quantity than their mana values, and cards that cost {0}. Lotus Petal checks those groups and is one of the last that remain at such an intersection.</p><p>In Duel Commander, where the speed of play is critical, the ability to generate mana immediately can lead to exceptionally fast starts. This quick mana is spotted as contributing to an overly aggressive and unbalanced metagame, especially when it comes to casting a commander that costs 2 on turn one, or a commander that costs 1 on turn one with an extra spell to complement that cast.</p><p>Lotus Petal's ability to produce mana also makes it a powerful tool in combo decks. As it enables players to cast key combo pieces or critical spells more quickly, potentially leading to more consistent and faster combo finishes.</p><p>After all this time being legal and never seeing a trend towards oblivion, Lotus Petal is now banned in Duel Commander.</p>",
+            "Rain of Filth": "<p>Rain of Filth provides a significant burst of mana by allowing a player to sacrifice lands for black mana. In formats where mana efficiency is crucial, this can enable powerful plays and strategies ahead of the usual curve. The card's ability to generate additional mana can facilitate combo decks, allowing them to assemble and execute their combos more quickly and consistently. In faster formats like Duel Commander, where games can be decided quickly, the mana boost from Rain of Filth might contribute to overly fast and uninteractive games. This reduces the diversity of viable strategies in the format. The ongoing spread over the metagame through different deck archetypes and commanders has led to Rain of Filth now being banned in Duel Commander.</p>"
+        }
+    }
+]

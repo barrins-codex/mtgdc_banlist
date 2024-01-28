@@ -23,7 +23,7 @@ File name must be `%Y-%m-%d.json` format with the following template:
 
 ### HOW TO ADD NEW BANLIST
 1. Put banlist file `%Y-%m-%d.json` file into `./banlists`
-1. Re-run python `python mtgdc_banlist` with options `--compile-html`, `--compile-json` or `--compile-both`
+1. Re-run python `python -m mtgdc_banlist` with options `--compile-html`, `--compile-json` or `--compile-both`
 
 *Works similar to edit/delete a banlist.*
 
@@ -36,9 +36,5 @@ python3 -m venv venv
 source venv/bin/activate
 pip install mtgdc_banlist
 
-python mtgdc_banlist --compile-both
+python -m mtgdc_banlist --compile-both
 ```
-
-## EXAMPLE
-Hosted examples of generated static html from the repo:
-* [Barrin's Codex](https://banlist-beta.barrins-codex.org)

@@ -1,6 +1,3 @@
-"""
-project.banlist_compiler
-"""
 import glob
 import html
 import json
@@ -11,33 +8,6 @@ import pkg_resources
 
 
 class BanlistCompiler:
-    """
-    Cette classe permet de travailler les fichiers JSON disponibles dans
-    le répertoire ``<racine>/banlists/``.
-
-    .. code-block :: python
-
-        >>> from mtgdc_banlist.banlist_compiler import BanlistCompiler
-        >>> banlist = BanlistCompiler()
-        >>>
-        >>> # Know if a card is banned via a call to `is_banned` function
-        >>> print(banlist.is_banned("Snow-covered Island"))
-        >>> False
-        >>>
-        >>> print(banlist.is_banned("Fblthp, the Lost", command_zone=True))
-        >>> False
-        >>>
-        >>> # Know if a card is banned via a call to `md_bans` property for
-        >>> # bans in the main deck:
-        >>> print("Snow-covered Island" in banlist.md_bans)
-        >>> False
-        >>>
-        >>> # Know if a card is banned via a call to `cz_bans` property for
-        >>> # bans in the command zone:
-        >>> print("Fblthp, the Lost" in banlist.cz_bans)
-        >>> False
-    """
-
     def __init__(self):
         self._json = {}
         self._dates = []
@@ -56,11 +26,6 @@ class BanlistCompiler:
         self._walk()
 
     def _walk(self):
-        """
-        Procédure qui vérifie date par date les mouvements de la banlist.
-
-        :meta private:
-        """
         cz_bans = set()
         md_bans = set()
         for date in sorted(self._dates):
@@ -77,11 +42,6 @@ class BanlistCompiler:
         return self._current
 
     def get_json_banlist(self, output_file):
-        """
-        Procédure qui retourne la banliste au format JSON.
-
-        :param output_file path: Chemin absolu pointant vers la sortie
-        """
         output_file = "banlists.json" if output_file == "" else output_file
 
         with open(output_file, "+w", encoding="utf-8") as banlist_file:
@@ -94,17 +54,6 @@ class BanlistCompiler:
             )
 
     def _add_tooltip(self, text, tooltip_dict):
-        """
-        Fonction qui permet de rajouter le tooltip au nom de la carte
-
-        :param text str: Phrase à laquelle ajouter un tooltip
-        :param tooltip str: Contenu du tooltip
-
-        :returns: Text avec tooltip prêt à intégrer dans le fichier HTML
-        :rtype: str
-
-        :meta private:
-        """
         tooltip = ""
 
         if text in tooltip_dict.keys():
@@ -114,19 +63,6 @@ class BanlistCompiler:
         return f'<span class="card-banlist" data-tooltip="{tooltip}">{text}</span>'
 
     def _changes(self, json_data, zone):
-        """
-        Fonction qui retourne les mouvements concernés dans la banliste (``json_data``)
-        selon la ``zone`` indiquée.
-
-        :param json_data dict: Données chargées depuis un fichier dans
-            ``<racine>/banlists/<fichier>.json``
-        :param zone str: (``md`` ou ``cz``) correspond à la zone souhaitée
-
-        :returns: La liste des mouvements (bans et unbans) pour la zone
-        :rtype: dict
-
-        :meta private:
-        """
         choice = "as_commander" if zone == "cz" else "in_deck" if zone == "md" else ""
         precision = " as a commander" if choice == "as_commander" else ""
 
@@ -150,17 +86,6 @@ class BanlistCompiler:
         return bans + unbans
 
     def _date_to_str(self, date_str):
-        """
-        Fonction qui permet de modifier l'affichage de la chaine
-        ``2020-05-25`` en ``May 2020, 25th``.
-
-        :param date_str datetime.datetime: Date au format ``%Y-%m-%d``
-
-        :returns: Date au format litéral
-        :rtype: str
-
-        :meta private:
-        """
         date_obj = datetime.strptime(date_str, "%Y-%m-%d")
 
         month_name = date_obj.strftime("%B")
@@ -175,18 +100,6 @@ class BanlistCompiler:
         return f"{month_name} {year}, {day}{day_suffix}"
 
     def _create_html_card(self, json_data):
-        """
-        Fonction qui permet de créer la carte ``timeline`` concernant la
-        banlist fournie.
-
-        :param json_data dict: Données chargées depuis un fichier dans
-            ``<racine>/banlists/<fichier>.json``
-
-        :returns: La carte prête à intégrer dans le code HTML de la page
-        :rtype: str
-
-        :meta private:
-        """
 
         card = '<div class="timeline">'
 
@@ -238,11 +151,6 @@ class BanlistCompiler:
         return card + end_card
 
     def compile_to_html(self, output_file):
-        """
-        Procédure qui retourne l'historique des banlists au format HTML.
-
-        :param output_file path: Chemin absolu pointant vers la sortie
-        """
         banlists_str_list = [
             self._create_html_card(self._json[date]) for date in self._dates
         ]
@@ -270,20 +178,6 @@ class BanlistCompiler:
             banlist_file.write(html_footer)
 
     def is_banned(self, card, command_zone=False):
-        """
-        Fonction qui évalue la présence de ``card`` dans la banlist.
-
-        Par défaut, la fonction ne recherche que dans les bans du
-        main deck mais il est possible d'utiliser ``command_zone=True``
-        lors de l'appel pour chercher dans les généraux bannis.
-
-        :param card str: Carte dont la présence sur la banlist est évaluée
-        :param command_zone bool: Indique si la recherche se situe dans
-            les cartes bannies en tant que commandat(e).
-
-        :returns: La présence de la carte dans la liste évaluée
-        :rtype: bool
-        """
         if command_zone:
             return card in self.cz_bans
 
@@ -291,21 +185,8 @@ class BanlistCompiler:
 
     @property
     def md_bans(self):
-        """
-        Propriété qui fournit la liste des cartes bannies dans le deck.
-
-        :returns: La liste des cartes bannies dans le main deck
-        :rtype: List
-        """
         return self._current["banned_cards"]
 
     @property
     def cz_bans(self):
-        """
-        Propriété qui fournit la liste des cartes bannies en tant que
-        commandant(e).
-
-        :returns: La liste des cartes bannies dans la zone de commandement
-        :rtype: List
-        """
         return self._current["banned_commanders"]

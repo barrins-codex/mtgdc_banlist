@@ -1,9 +1,7 @@
-"""
-project.parser
-
-Fichier permettant d'utiliser le parser et d'executer la compilation demandée.
-"""
 import argparse
+import sys
+
+from mtgdc_banlist import BanlistCompiler
 
 parser = argparse.ArgumentParser(
     prog="create_banlist.py",
@@ -40,3 +38,22 @@ parser.add_argument(
     nargs="?",
     default="",
 )
+
+
+def main(args):
+    args = parser.parse_args(args)
+
+    if not any([args.compile_json, args.compile_html, args.compile_both]):
+        parser.print_help()
+
+    banlist = BanlistCompiler()
+
+    if any([args.compile_json, args.compile_both]):
+        banlist.get_json_banlist(args.output)
+
+    if any([args.compile_html, args.compile_both]):
+        banlist.compile_to_html(args.output)
+
+
+if __name__ == "__main__":
+    main(sys.argv[1:])
