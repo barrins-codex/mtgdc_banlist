@@ -1,8 +1,0 @@
-black
-isort
-flake8
-pylint
-sphinx
-sphinx-rtd-theme
-requests
-unidecode
