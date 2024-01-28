@@ -1,0 +1,15 @@
+[
+    {
+        "date": "2019-02-25",
+        "special": "",
+        "link": "https://www.mtgdc.info/announcements/2019/february-2019-rules-bannedrestricted-update",
+        "newly_banned_as_commander": ["Baral, Chief of Compliance", "Prime Speaker Vannifar"],
+        "newly_unbanned_as_commander": [],
+        "newly_banned_in_deck": [],
+        "newly_unbanned_in_deck": [],
+        "explanations": {
+            "Baral, Chief of Compliance": "<p>Baral, Chief of Compliance has been around for two years now, and actually never ceased to be played. It constantly made good results, but has seen a slight decrease in play, until a few months ago, where it became a recurring top-performing deck again. Though the builds are often quite different from its echoing alter ego Jace, Vryn's Prodigy, that was banned in 2015 as a commander, too, it stayed for a while, but keeps pumping the “extra turns” archetypes, and High Tide-based decks.</p><p>Regarding those archetypes, “extra turns” decks with Baral, Chief of Compliance as a commander seem more toxic to us than non-Baral, Chief of ComplianceHigh Tide-based decks.</p><p>We also think banning a commander often solves problems more than banning a problematic card out of the other 99.</p>",
+            "Prime Speaker Vannifar": "<p>It is true that banning cards from the format too early can be disappointing for many players, but so does the opposite. Which sometimes requires action.</p><p>Prime Speaker Vannifar proved to be a very high level card. It is even now played in Modern, a faster format than Duel Commander, that doesn’t use the command zone, doesn’t have eternal cards, doesn’t use the singleton construction rule, has 60 cards instead of 99, etc.</p><p>Despite all those factors, the card is still played in that format, and so was it in Duel Commander, allowing overly fast combo wins that could even sometimes show a high resilience against spot removals, a lack of interaction that goes against the general philosophy of a healthy metagame.</p>"
+        }
+    }
+]

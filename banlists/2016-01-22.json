@@ -1,0 +1,13 @@
+[
+    {
+        "date": "2016-01-22",
+        "special": "Cards which generate mana of any color (City of Brass, Coalition Relic, Birds of paradise, ...) allow their controllers to use cards that require \"true colorless\" mana if the commander doesn't have a 5-color identity.",
+        "newly_banned_as_commander": [],
+        "newly_unbanned_as_commander": [],
+        "newly_banned_in_deck": [],
+        "newly_unbanned_in_deck": ["Cataclysm"],
+        "explanations": {
+            "Cataclysm": "Cataclysm is a card with a very high power level and that requires a specific setup to really shine. That was relatively easy to set up when Mystical Tutor was legal, since it allowed players to either find a necessary piece of disruption or a perfectly-timed Cataclysm. Now that Mystical Tutor is banned, the card should be less regularly backbreaking than it used to be. Besides, the decks that will benefit the most from that unban aren't the best positionned in the format (Abzan Disrupt / Geist of Saint Traft / Grand Arbiter Augustin IV)."
+        }
+    }
+]

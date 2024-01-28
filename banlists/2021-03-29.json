@@ -1,0 +1,19 @@
+[
+    {
+        "date": "2021-03-29",
+        "special": "",
+        "link": "https://www.mtgdc.info/announcements/2021/march-2021-rules-bannedrestricted-update",
+        "newly_banned_as_commander": ["Ardenn, Intrepid Archaeologist", "Keleth, Sunmane Familiar", "Krark, the Thumbless", "Ludevic, Necro-Alchemist", "Reyhan, Last of the Abzan", "Rograkh, Son of Rohgahh"],
+        "newly_unbanned_as_commander": [],
+        "newly_banned_in_deck": [],
+        "newly_unbanned_in_deck": [],
+        "explanations": {
+            "Rograkh, Son of Rohgahh": "Being free is a major interaction with all the commander-specific cards that were printed in the recent years. Partner is also usually about less tempo for more card advantage, and this little guy is a huge tempo boost. While a 0-mana 0/1 commander might look innocent enough at first glance, Rograkh, Son of Rohgahh quickly rose to the top of the format. Its ability to produce fast, aggressive starts while enabling many other commanders, cards or strategies currently made it the most played partner by a wide margin, and one of the easiest to pair with another.",
+            "Keleth, Sunmane Familiar": "Keleth, Sunmane Familiar is another partner that seems underwhelming but plays out better than expected. Allowing regular, aggressive starts for a low resource investment when paired with any partner that costs 3 mana or less. It overshadows most aggressive single commanders and other partner combinations.",
+            "Ardenn, Intrepid Archaeologist": "Ardenn, Intrepid Archaeologist is used to build super fast, aggressive decks. But it also brings another excessive call for an answer on tempo, when getting equipped with... Pretty much anything. Seeing the amount of overcosted and powerful equipments WotC keeps printing over and over, most partner pairs involving Ardenn, Intrepid Archaeologist and other low-cost commanders have the potential to hit harder and faster than traditional aggressive builds.",
+            "Ludevic, Necro-Alchemist": "Ludevic, Necro-Alchemist looked like a fine commander until now, but keeps proving more and more efficient. It has never been among the most-hated partners, but it has gained a lot of popularity in the last two years, and is probably one of the easiest to pair with almost anything (making him a great go-to commander every time only one or two other partner commanders are banned).",
+            "Krark, the Thumbless": "Though Krark, the Thumbless is a lot of fun (and lore!), this commander allows excessive damage and control to any game it gets into. When it was spoiled, Krark, the Thumbless got a lot of players worried. So far, it failed to live up to the hype, but we do believe that there's a big chance we might be seeing a lot more games crushed by random Krark-value if we keep it legal after banning other low-cost partners.",
+            "Reyhan, Last of the Abzan": "Reyhan, Last of the Abzan is definitely one of the fairest and most interesting partners to build with, so it might seem weird to see it alongside other partners that got axed because of their power level. But it is also one of the partners that gets paired very often and proves being good with a lot of different other commanders, even when players don't really try to benefit from everything it has to offer."
+        }
+    }
+]

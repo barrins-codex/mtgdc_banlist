@@ -1,0 +1,13 @@
+[
+    {
+        "date": "2015-10-02",
+        "special": "The Vancouver mulligan is now legal in Duel Commander.",
+        "newly_banned_as_commander": [],
+        "newly_unbanned_as_commander": [],
+        "newly_banned_in_deck": ["Sensei's Divining Top"],
+        "newly_unbanned_in_deck": [],
+        "explanations": {
+            "Sensei's Divining Top": "The card was creating a lot of fuss because of its power and its impact on the games' durations. During those 6 month being unbanned, Top didn't seem to have any positive impact on the format, powering up decks that were already dominant decks. That's why Sensei's divining top is now banned."
+        }
+    }
+]

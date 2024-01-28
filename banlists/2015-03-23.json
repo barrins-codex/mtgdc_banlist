@@ -1,0 +1,19 @@
+[
+    {
+        "date": "2015-03-23",
+        "special": "",
+        "newly_banned_as_commander": [],
+        "newly_unbanned_as_commander": [],
+        "newly_banned_in_deck": ["Entomb", "Food Chain", "Fastbond"],
+        "newly_unbanned_in_deck": ["Winter Orb", "Crucible of Worlds", "Sensei's Divining Top", "Braids, Cabal Minion"],
+        "explanations": {
+            "Entomb": "This cards allows explosive combos too early in the game. It's the only card that both allows searching through a library and moving a card in a beneficial zone for one single mana. The possibility given by Entomb overwehlms widely the structure we would like to give to Duel Commander.",
+            "Food Chain": "Food Chain is widely used in Duel Commander as the exile restriction is easily bypassed… Thanks to the Commander rule and the specificities of some legendary creatures. Some of them allow immediate recursion and a “collateral” profit. We do consider that the speed of such actions is really too fast and also that interaction with those actions becomes too hard.",
+            "Fastbond": "Fastbond is a dreadful mana accelerating card when played on the first turns but such a use remains seldom. Later in the game, its effect often becomes more limited by the inability to gather several lands in hand. Yet, sometimes, a synergy can break this (a “bounce-land”, cards like Upheaval, Sunder,…). Because of the releasing of new BUG possible commanders, such synergies found new homes, in which they become “unhealthy” for the format. Moreover, we think that Crucible Of Worlds and Fastbond shouldn't be on the same side of the banned/authorized lists. Those two cards together are too explosive for the format.",
+            "Winter Orb": "Having to face a growing number of decklists that revolve around final combos (hybrid decks such as aggro/combo or control/combo), it appeared to us that we should offer an alternate “stax/prison” path for all archetypes. Such a path exists under many forms when based on the specifications of the commander -whether we talk about its color(s) or power(s)-, but having access to an artifact offers more possibilities.",
+            "Crucible of Worlds": "Previous statements regarding Winter Orb also apply here. The possibilities that are offered by Crucible Of Worlds as a constraints means or as a developing basis favours interactive strategies. Having Crucible Of Worlds back also follows the editor's choices, who considers graveyards as a whole resourceful zone, as opposed to the exile zone, that is a real zone of no return.",
+            "Sensei's Divining Top": "Today, duel commander is supported by a lot of new associations and actively played by a lot of people. Therefore, it doesn't seem appropriate for us to continue to monitor playing time management and to take it as an element into consideration. Having excluded these considerations, we believe that this card isn't unfair.",
+            "Braids, Cabal Minion": "This commander has been banned for a long time. Since then, all means available to put it into play quickly while paying its upkeep conditions have been limited. Moreover, the format gave birth to a lot of powerful decks. We think that Braids, Cabal Minion can fit in duel commander without having a negative impact on the format."
+        }
+    }
+]

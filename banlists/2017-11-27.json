@@ -1,0 +1,14 @@
+[
+    {
+        "date": "2017-11-27",
+        "special": "",
+        "link": "https://www.mtgdc.info/announcements/2017/november-2017-rules-bannedrestricted-update",
+        "newly_banned_as_commander": [],
+        "newly_unbanned_as_commander": [],
+        "newly_banned_in_deck": ["Fastbond"],
+        "newly_unbanned_in_deck": [],
+        "explanations": {
+            "Fastbond": "<p>Fastbond is a very strong card, but not a broken card in singleton, as you need to build around it and assemble a particular sequence of cards to make it great. This is why we chose to unban it. Nevertheless Fastbond has two major flaws.</p><p>It can make broken things too early. Despite the fact that such events are statistically very rare, sometimes do they happen. When an opponent casts Titania, Protector of Argoth (or The Gitrog Monster) on turn 1, saying that it is a statistically rare event will not solve frustration.</p><p>Fastbond’s impact on the metagame wasn’t positive. It is a weak card against strong strategies and a strong card against “tier 2 or less” decks.</p><p>Unfortunately, for all those reasons, the field testing of Fastbond did not prove the card worth staying out of the banned/restricted list.</p>"
+        }
+    }
+]

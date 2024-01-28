@@ -1,0 +1,13 @@
+[
+    {
+        "date": "2015-07-17",
+        "special": "The commander can now be put in the command zone instead of going to the hand.",
+        "newly_banned_as_commander": [],
+        "newly_unbanned_as_commander": [],
+        "newly_banned_in_deck": ["Mystical Tutor"],
+        "newly_unbanned_in_deck": [],
+        "explanations": {
+            "Mystical Tutor": "Mystical Tutor is a card that really favoured combo and control decks to the detriment of aggressive decks, which is the opposite of the re-balancing decisions that our comitee turns to. Some of its interactions were formidable (miracle keyword cards) and it was really making players take too much advantage over the 99 unique cards rule, allowing players to include powerful but situational cards (like Armageddon / Upheaval) with lesser risks. Seeing it banned also opens other unbans in the long run."
+        }
+    }
+]

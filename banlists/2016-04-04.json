@@ -1,0 +1,15 @@
+[
+    {
+        "date": "2016-04-04",
+        "special": "The \"true colorless\" mana can no longer be obtained from \"any mana\" generated from outside the color identity.",
+        "newly_banned_as_commander": ["Tasigur, the Golden Fang", "Yisan, the Wanderer Bard"],
+        "newly_unbanned_as_commander": [],
+        "newly_banned_in_deck": ["Gaea's Cradle"],
+        "newly_unbanned_in_deck": [],
+        "explanations": {
+            "Tasigur, the Golden Fang": "Tasigur, the Golden Fang makes all other control commanders look ridiculous, when compared to it, mostly thanks to its ridiculous casting cost ({B} + delve casting cost payment mechanic). Such a quality allows it to exhaust all possible answers from opponents, as well as to winning a “counterspell battle”, even though being the card that settles such battles. The rest of the decks can solely be made of “reaction” cards (spot/mass removals, for example), for Tasigur, the Golden Fang is an oppressive threat whatsoever. Last but not the least, this card interacts strongly with other cards like Life from the loam or Upheaval. For all those reasons, Tasigur, the Golden Fang is now banned as a commander only.",
+            "Yisan, the Wanderer Bard": "Yisan, the Wanderer Bard is a green commander that has a huge impact on the battlefield, that only costs three mana and that can therefore enter the battlefield on turn two very often, via a turn one/two accelerator. We are deeply persuaded that such commanders harm the format. Yisan, the Wanderer Bard is de facto a quick card advantage source that grows quickly, and that therefore produces fantastically responsive and explosive games. It is so dangerous for the format that its mere presence forces opponents to make very costly adaptations. Yisan, the Wanderer Bard is therefore banned as a commander only, so as to maintain more balance in the format.",
+            "Gaea's Cradle": "Gaea's Cradle allows players to develop their deck strategies roughly and suddenly. Being particularly hard to stop when playing active decklists, its presence in the metagame reinforces control decks, which end up being the only decks that are able to handle a wide number of opponent creatures. It also amplifies the existing cleavage between active, green-based decks and other non-explosive decks. For having a very negative impact on the format, Gaea's Cradle is now banned."
+        }
+    }
+]

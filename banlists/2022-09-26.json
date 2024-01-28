@@ -1,0 +1,14 @@
+[
+    {
+        "date": "2022-09-26",
+        "special": "",
+        "link": "https://www.mtgdc.info/announcements/2022/september-2022-rules-bannedrestricted-update",
+        "newly_banned_as_commander": [],
+        "newly_unbanned_as_commander": ["Yoshimaru, Ever Faithful"],
+        "newly_banned_in_deck": [],
+        "newly_unbanned_in_deck": [],
+        "explanations": {
+            "Yoshimaru, Ever Faithful": "<p>During the marketing period of cards from Kamigama: Neon Dynasty and Neon Dynasty Commander in February, we had the proof that new Magic The Gathering cards could be printed as one-zone-two-commanders at any time, now, being pushed from time to time. This greatly made us move into winter announcements, which changed everything. For those reasons and because of those coincidences, Yoshimaru, Ever Faithful bore a very specific history: it was never legal on the day it was released, while being also a valid commander.</p><p>Despite the new rules we added since then, it never was really tried by people, who didn't have the opportunity to play it. We believe it is worth giving it a try, and, as this situation is really singular, this change is an experimental one.</p><p>A few things that make Yoshimaru, Ever Faithful a good candidate for this experiment:</p><ul><li>First, as mentioned earlier, it promotes an aggressive gameplan, something we like to see in the format as it's an interactive and interesting gameplay, and we hope it would let the archetype be on a par with the rest of the format.</li><li>Second, it has never been available since our winter announcement. As it would be overpowered for sure under the older rules, it could now be in line with the power level of the format.</li><li>Third, there are numerous ways to build this general, with choices ranging from choosing colors, to establishing the good ratio of synergic spells, etc. Which means this is something we could not test, even with a seasoned team of playtesters, and the best way to evaluate the card is to let you all, the community, work on it.</li></ul>"
+        }
+    }
+]

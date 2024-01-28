@@ -1,0 +1,16 @@
+[
+    {
+        "date": "2016-07-18",
+        "special": "",
+        "newly_banned_as_commander": ["Marath, Will of the Wild"],
+        "newly_unbanned_as_commander": [],
+        "newly_banned_in_deck": ["Necrotic Ooze","Dig Through Time","Treasure Cruise"],
+        "newly_unbanned_in_deck": [],
+        "explanations": {
+            "Marath, Will of the Wild": "Marath, Will of the Wild is especially oppressive towards creature-based decks, by design. Its ability allows it to eliminate other creatures without even fighting them. Its low casting cost, along with its colours allow it to hit the battlefield on turn 2. Yet, as games last, it remains very powerful. Marath, Will of the Wild is part of lots of cards affinities/combos like Earthcraft, Skullclamp, Basilisk Collar, etc. Decks that are based on this commander also include other combos, like the ones based on Kiki-Jiki, The Mirror Breaker, that also reinforce the strength of the whole deck. Marath, Will of the Wild really threatens the diversity we wish to see in the format and is therefore banned as a commander in Duel Commander games.",
+            "Necrotic Ooze": "Necrotic Ooze is the key element of a combo that is available to many great decks in the format (Sidisi, Undead Vizier and GBx decks). The fact that this particular combo can't even be disrupted by almost any removal spell makes it so oppressive that we decided to ban Necrotic Ooze.",
+            "Dig Through Time": "Doing more than drawing two cards for a total mana cost of 3 is not a thing that should be tolerated already, regarding the format. Yet, doing so among a choice of seven cards, at instant speed, makes this card even less acceptable. Even when played in decks where allowing the 6-mana delve alternative casting cost payment is quite hard, doing so for 3-5 mana still ain't really acceptable. Dig Through Time is therefore banned.",
+            "Treasure Cruise": "Doing more than drawing two cards for a total mana cost of 3 is not a thing that should be tolerated already. Drawing three cards for 1 mana cost in a late game shouldn't be tolerated either and generates an imbalance as it resolves. For those reasons, Treasure Cruise is now banned. One last word regarding the old watchlist, though: this card was never added to the watchlist, for this is not a commander card. Removing it from legal cards in the format doesn't break any archetype, plus the card does not require money investment for anyone."
+        }
+    }
+]

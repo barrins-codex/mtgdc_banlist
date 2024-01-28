@@ -1,0 +1,14 @@
+[
+    {
+        "date": "2020-08-24",
+        "special": "On June 10, Wizards of the Coast published an announcement removing some very old cards from competitive play. This change will also apply in Duel Commander.",
+        "link": "https://www.mtgdc.info/announcements/2020/august-2020-rules-bannedrestricted-update",
+        "newly_banned_as_commander": [],
+        "newly_unbanned_as_commander": [],
+        "newly_banned_in_deck": ["Genesis Storm"],
+        "newly_unbanned_in_deck": [],
+        "explanations": {
+            "Genesis Storm": "<p>Over the last year, control decks had been struggling to stay in shape, and were most of the time smothered by a very aggressive metagame and overpowered combos, all of these with such good tempos that they couldn’t keep up with the pace and were most of the time forced to kill with random combos themselves.</p><p>Last update was among other purposes about balancing the overall playability and performance of control, combo and aggressive strategies. Since then, more blue-and-green-based decks started focusing on new combo kills backed up by control shells, like Uro, Titan of Nature's Wrath, or even the older Thrasios, Triton Hero, for instance.</p><p>Those decks focus on a new way of structurally over-optimizing control decks, playing around Genesis Storm, a card from 2018 that has a very high affinity with “permanent-type-less“ builds. Genesis Storm becomes a one-card instant kill that dodges most common interactions, including counters and removal, provided the chosen combo only includes two permanents as pieces (such as Thought Lash + Jace, Wielder of Mysteries or Rest in Peace + Helm of Obedience).</p><p>Although removing the named commanders could be slowing the take of this card on the format, it would still be used in the future should a new commander or combo be printed. Therefore, Genesis Storm is now banned.</p>"
+        }
+    }
+]

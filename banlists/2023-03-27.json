@@ -1,0 +1,14 @@
+[
+    {
+        "date": "2023-03-27",
+        "special": "",
+        "link": "https://www.mtgdc.info/announcements/2023/march-2023-rules-bannedrestricted-update",
+        "newly_banned_as_commander": [],
+        "newly_unbanned_as_commander": [],
+        "newly_banned_in_deck": ["Trazyn the Infinite"],
+        "newly_unbanned_in_deck": [],
+        "explanations": {
+            "Trazyn the Infinite": "<p>Of course, as many noticed, Trazyn the Infinite echoes a lot to Necrotic Ooze. Even though their respective abilities refer to a way different set of cards (something around 4.8 times more related cards for Necrotic Ooze), the current combination of cards which (most generally) allows them to win instantly end up being pretty much the same. All other cards involved not being particularly damaging the player experience, it still seems that the central piece of all of them needs to go.</p><p>As the final results end up with a very cheap-to-include, hard-to-answer win condition, the conclusion still remains the same: it generates a lot of unwanted bad player experience on the field. the small play uptick given by the fact that Trazyn the Infinite can also be a commander barely adds a little more to the whole, but yet remains noticeable, on top of it. This also greatly helped as a reminder that Necrotic Ooze being legal again wasn't totally a good idea (not to mention cards like Old Stickfingers didn't even exist back when the first one was banned), hence Trazyn the Infinite goes to the dark shelf of cards banned in Duel Commander.</p>"
+        }
+    }
+]
